@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Bila Procurement - Our heritage, leadership, and operational excellence in Somalia.">
+    <title>About Us | Bila Procurement</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(11, 17, 32, 0.6), rgba(11, 17, 32, 0.6)), url('assets/about_hero_new.jpeg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            padding-top: 80px;
+        }
+
+        .about-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .heritage-section {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .heritage-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 50px;
+            align-items: flex-start;
+        }
+
+        .heritage-images {
+            position: relative;
+        }
+
+        .heritage-images img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            border-radius: 4px;
+            border-left: 8px solid var(--secondary-color);
+            border-bottom: 8px solid var(--secondary-color);
+        }
+
+        .leader-card {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            gap: 60px;
+            align-items: stretch;
+            background: var(--white);
+            padding: 0;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .leader-image {
+            position: relative;
+            padding: 20px;
+        }
+
+        .leader-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-left: 6px solid var(--secondary-color);
+            border-top: 6px solid var(--secondary-color);
+            border-radius: 4px;
+        }
+
+        .leader-info {
+            padding: 40px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .leader-title {
+            display: block;
+            color: var(--secondary-color);
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .leader-bio p {
+            margin-bottom: 20px;
+            color: var(--text-light);
+        }
+
+        .advantage-section {
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .advantage-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+            align-items: stretch;
+        }
+
+        .advantage-card {
+            padding: 45px;
+            text-align: left;
+            border: 1px solid #eee;
+            background: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            min-height: 300px;
+            transition: var(--transition);
+        }
+
+        .advantage-card.dark {
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+        }
+
+        .advantage-card i {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .advantage-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .efficiency-card {
+            grid-column: span 2;
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            background: #fdfaf5;
+            padding: 50px;
+            align-items: center;
+            gap: 50px;
+            border: 1px solid #f2e9d9;
+            text-align: left;
+        }
+
+        .percentage-box {
+            font-size: 5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-align: center;
+            border: 1px solid #e5d5b7;
+            padding: 40px;
+            background: var(--white);
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo_rb.png" alt="Bila Procurement Logo" class="brand-logo">
+                <span class="brand-name">Bila Procurement</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html" class="active">ABOUT US</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <a href="#" class="btn btn-gold">GET A QUOTE</a>
+            <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <header class="about-hero">
+        <div class="container">
+            <h1 class="fade-in-up">Mogadishu’s Gateway to Global Procurement</h1>
+            <p class="fade-in-up delay-1">Bridging the gap between international standards and local expertise since 2015.</p>
+        </div>
+    </header>
+
+    <!-- Heritage Section -->
+    <section class="heritage-section">
+        <div class="container">
+            <div class="heritage-grid">
+                <div class="heritage-text">
+                    <span class="section-subtitle">OUR HERITAGE</span>
+                    <h2 class="section-title">Precision in Procurement, Locally Rooted.</h2>
+                    <p>Established in 2015, Bila Procurement and Logistics was born from a vision to redefine how essential services and goods are delivered in Mogadishu. In a rapidly evolving commercial landscape, we serve as the critical link for NGOs and commercial enterprises requiring uncompromising reliability.</p>
+                    <p class="mt-4">Our presence in Mogadishu isn’t just about office space; it’s about deep-seated community ties and an intricate understanding of the local logistical challenges. We combine international best practices with on-the-ground agility to ensure every contract is executed with surgical precision.</p>
+                </div>
+                <div class="heritage-images">
+                    <img src="assets/heritage_office.jpeg" alt="Strategic Operations Office">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="leadership-section">
+        <div class="container">
+            <span class="section-subtitle text-center">LEADERSHIP</span>
+            <div class="leader-card">
+                <div class="leader-image">
+                    <img src="assets/owner_profile.png" alt="Qamar Sh. Osman - Founder & CEO">
+                </div>
+                <div class="leader-info">
+                    <h2>Qamar Sh. Osman</h2>
+                    <span class="leader-title">Founder & CEO</span>
+                    <div class="leader-bio">
+                        <p>With over 8 years of specialized experience in high-stakes procurement, Qamar Sh. Osman stands at the helm of Bila Procurement and Logistics. Her vision was forged through a deep-seated desire to professionalize the supply chain sector in Somalia.</p>
+                        <p>Holding specialized training in Procurement and Supply Chain Management, Qamar has a proven track record of navigating complex international trade regulations and local market dynamics with equal finesse. Her leadership is defined by a commitment to transparency and ethical sourcing.</p>
+                        <a href="#" class="learn-more">Connect on LinkedIn <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantage Section -->
+    <section class="advantage-section">
+        <div class="container">
+            <h2 class="section-title">The Bila Advantage</h2>
+            <p class="section-subtitle">Why international NGOs and leading commercial firms trust us with their most critical operations.</p>
+            
+            <div class="advantage-grid">
+                <div class="advantage-card">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>Unwavering Trust</h3>
+                    <p>Trust is our primary currency. In an environment where transparency is paramount, we provide rigorous auditing, real-time tracking, and verified ethical sourcing for every item in your procurement list.</p>
+                </div>
+                <div class="advantage-card dark">
+                    <i class="fa-solid fa-award"></i>
+                    <h3>Global Standards</h3>
+                    <p>We operate on the ISO framework, ensuring that Mogadishu’s logistics meet the world’s strictest quality controls and safety protocols.</p>
+                </div>
+                <div class="efficiency-card">
+                    <div class="efficiency-text" style="text-align: left;">
+                        <i class="fa-solid fa-bolt" style="color: var(--secondary-color); font-size: 2rem; margin-bottom: 15px; display: block;"></i>
+                        <h3>Operational Efficiency</h3>
+                        <p>Leveraging cutting-edge logistics software, we minimize downtime and maximize throughput. Our 2024-ready infrastructure is built for speed without sacrificing meticulousness.</p>
+                    </div>
+                    <div class="percentage-box">99%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container text-center">
+            <h2 class="cta-title">Ready to secure your supply chain?</h2>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-gold-solid">CONNECT WITH OUR EXPERTS</a>
+                <a href="#" class="btn btn-outline-light">VIEW SERVICE PORTFOLIO</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <img src="assets/logo_rb.png" alt="Bila Procurement Logo" class="brand-logo footer-img-logo">
+                    <p>Excellence in logistics and government services within the Somali business landscape.</p>
+                    <div class="social-links">
+                        <a href="mailto:qamarprocurement@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://wa.me/252612448933" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61586562456490" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@bilaprocurementandlogis?_r=1&_t=ZS-967D7Y0kADg" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/dayax.co?igsh=MWN1MXNhb2E5cjM3dg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li><a href="#">Procurement</a></li>
+                        <li><a href="#">Logistics</a></li>
+                        <li><a href="#">Customs Clearance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>LOCATION</h4>
+                    <p style="opacity: 0.6; font-size: 0.9rem;">Mogadishu Office<br>Wadada JIDKA, Mogadishu<br>qamarprocurement@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bila Procurement and Logistics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

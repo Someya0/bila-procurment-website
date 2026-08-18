@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Bila Procurement - Get in touch for specialized procurement and logistics solutions in Somalia.">
+    <title>Contact Us | Bila Procurement</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-hero {
+            padding: 100px 0 60px;
+        }
+
+        .contact-header-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .contact-intro h2 {
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .contact-intro h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+        }
+
+        .contact-intro .motto {
+            font-family: var(--font-heading);
+            color: var(--secondary-color);
+            font-style: italic;
+            font-size: 1.3rem;
+            margin: 30px 0 10px;
+        }
+
+        .contact-visual img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-main {
+            padding: 80px 0;
+            background: #fafafa;
+        }
+
+        .contact-main-grid {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 40px;
+        }
+
+        .info-card {
+            background: var(--white);
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-radius: 4px;
+        }
+
+        .info-group {
+            margin-bottom: 40px;
+        }
+
+        .info-group h3 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-light);
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .info-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .info-item i {
+            color: var(--secondary-color);
+            margin-top: 5px;
+        }
+
+        .info-item p {
+            font-size: 0.95rem;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .info-item span {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: var(--text-light);
+            margin-top: 5px;
+        }
+
+        .quote-box {
+            margin-top: 30px;
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 30px;
+            border-radius: 4px;
+        }
+
+        .form-card {
+            background: var(--white);
+            padding: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-radius: 4px;
+        }
+
+        .form-card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .form-card p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group.full {
+            grid-column: span 2;
+        }
+
+        .form-group label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 12px 0;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            outline: none;
+            font-family: inherit;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--secondary-color);
+        }
+
+        .map-section {
+            padding: 80px 0;
+        }
+
+        .map-container {
+            position: relative;
+            height: 450px;
+            background: url('assets/office_contact.jpeg') no-repeat center center/cover;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .map-overlay-box {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            background: var(--white);
+            padding: 30px;
+            max-width: 300px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo_rb.png" alt="Bila Procurement Logo" class="brand-logo">
+                <span class="brand-name">Bila Procurement</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
+            </ul>
+            <a href="#" class="btn btn-gold">GET A QUOTE</a>
+            <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <header class="contact-hero">
+        <div class="container">
+            <div class="contact-header-grid">
+                <div class="contact-intro">
+                    <h2>CONNECT WITH US</h2>
+                    <h1>Global Logistics,<br>Local Expertise.</h1>
+                    <p>Dedicated to bridging the gap between global supply chains and the Somali market. Reach out to
+                        our Mogadishu headquarters for specialized procurement and logistics solutions.</p>
+                    <p class="motto">"Adeeg Hufan Iyo Kalsooni Buuxda"</p>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">Efficient Service and Full Confidence</p>
+                </div>
+                <div class="contact-visual">
+                    <img src="assets/contact_visual.png" alt="Bila Logistics View">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Contact Section -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-main-grid">
+                <!-- Left: Info Cards -->
+                <div class="contact-info-sidebar">
+                    <div class="info-card">
+                        <div class="info-group">
+                            <h3>Headquarters</h3>
+                            <div class="info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Mogadishu, Somalia<span>Wadajir District, Airport Road</span></p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>qamarprocurement@gmail.com<span>qamarprocurement@gmail.com</span></p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+252 61 2448933<span>WHATSAPP</span></p>
+                            </div>
+                        </div>
+
+                        <div class="info-group" style="margin-bottom: 0;">
+                            <h3>SOCIAL PRESENCE</h3>
+                            <div class="social-links" style="margin-bottom: 15px;">
+                                <a href="mailto:qamarprocurement@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                                <a href="https://wa.me/252612448933" target="_blank"><i
+                                        class="fa-brands fa-whatsapp"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=61586562456490" target="_blank"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://www.tiktok.com/@bilaprocurementandlogis?_r=1&_t=ZS-967D7Y0kADg"
+                                    target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                                <a href="https://www.instagram.com/dayax.co?igsh=MWN1MXNhb2E5cjM3dg=="
+                                    target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <p style="font-size: 0.8rem; color: var(--text-light);">@bila.co</p>
+                        </div>
+                    </div>
+
+                    <div class="quote-box">
+                        <h3 style="font-size: 1rem; margin-bottom: 15px;">Quur oo Qance</h3>
+                        <p style="font-size: 0.85rem; line-height: 1.5; opacity: 0.9;">Our commitment to your
+                            satisfaction is embedded in our Somali roots. We deliver not just goods, but trust and
+                            contentment in every procurement cycle.</p>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="form-card">
+                    <h2>Send us a Message</h2>
+                    <p>Complete the form below and our procurement specialists will respond within 24 hours.</p>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label>FULL NAME</label>
+                            <input type="text" placeholder="full-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>EMAIL ADDRESS</label>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group full">
+                            <label>SUBJECT</label>
+                            <select required>
+                                <option value="">Procurement Inquiry</option>
+                                <option value="logistics">Logistics Support</option>
+                                <option value="office">Office Setup</option>
+                                <option value="quote">Request a Quote</option>
+                            </select>
+                        </div>
+                        <div class="form-group full">
+                            <label>MESSAGE</label>
+                            <textarea rows="4" placeholder="How can we assist your business operations?"
+                                required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-gold-solid"
+                                style="width: fit-content; padding: 15px 40px;">SEND MESSAGE <i
+                                    class="fa-solid fa-arrow-right" style="margin-left: 10px;"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <div class="map-overlay-box">
+                    <h3 style="font-size: 0.9rem; margin-bottom: 10px;">Our Port Office</h3>
+                    <p style="font-size: 0.8rem; color: var(--text-light);">Strategically located near the Mogadishu
+                        Port for rapid customs clearance and freight management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <img src="assets/logo_rb.png" alt="Bila Procurement Logo" class="brand-logo footer-img-logo">
+                    <p>Your premier partner for seamless procurement and logistics in East Africa. Reliability followed.
+                    </p>
+                    <div class="social-links">
+                        <a href="mailto:qamarprocurement@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://wa.me/252612448933" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61586562456490" target="_blank"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@bilaprocurementandlogis?_r=1&_t=ZS-967D7Y0kADg"
+                            target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/dayax.co?igsh=MWN1MXNhb2E5cjM3dg==" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li><a href="#">Procurement</a></li>
+                        <li><a href="#">Logistics</a></li>
+                        <li><a href="#">Supply Chain</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html" style="color: var(--secondary-color);">Contact Us</a></li>
+                        <li><a href="#">Mogadishu Office</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>LEGAL</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bila Procurement and Logistics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
