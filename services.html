@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         .services-hero {
-            height: 70vh;
-            background: linear-gradient(rgba(11, 17, 32, 0.6), rgba(11, 17, 32, 0.6)), url('assets/owner_services_1.jpeg') no-repeat center center/cover;
+            min-height: 55vh;
+            background: linear-gradient(rgba(11, 17, 32, 0.65), rgba(11, 17, 32, 0.65)), url('assets/services_hero.png') no-repeat center 25%/cover;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -117,6 +117,7 @@
             width: 100%;
             height: 450px;
             object-fit: cover;
+            object-position: center 15%;
             border-right: 8px solid var(--secondary-color);
             display: block;
         }
@@ -201,6 +202,31 @@
         .logistics-list li i {
             color: var(--secondary-color);
             font-size: 0.8rem;
+        }
+
+        /* Responsive Media Queries */
+        @media (max-width: 860px) {
+            .event-section {
+                grid-template-columns: 1fr;
+            }
+            .event-image img {
+                height: 380px;
+                border-right: none;
+                border-bottom: 8px solid var(--secondary-color);
+            }
+            .event-text {
+                padding: 30px 20px;
+            }
+            .setup-grid {
+                grid-template-columns: 1fr;
+            }
+            .setup-main {
+                padding-right: 0;
+                margin-bottom: 25px;
+            }
+            .services-hero h1 {
+                font-size: 2.2rem;
+            }
         }
     </style>
 </head>

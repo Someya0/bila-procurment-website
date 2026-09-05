@@ -29,6 +29,11 @@ body {
     overflow-x: hidden;
 }
 
+img {
+    max-width: 100%;
+    image-rendering: -webkit-optimize-contrast;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -198,9 +203,9 @@ h1, h2, h3, .logo {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(rgba(11, 17, 32, 0.45), rgba(11, 17, 32, 0.45)), 
-                url('assets/presentation team11.png') no-repeat center center/cover;
+                url('assets/presentation_team.png') no-repeat center 20%/cover;
     display: flex;
     align-items: center;
     position: relative;
