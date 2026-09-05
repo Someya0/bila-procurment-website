@@ -14,12 +14,15 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Performance Preload -->
+    <link rel="preload" as="image" href="assets/contact_visual.webp" type="image/webp">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
     <style>
         .about-hero {
             min-height: 55vh;
-            background: linear-gradient(rgba(11, 17, 32, 0.65), rgba(11, 17, 32, 0.65)), url('assets/contact_visual.png') no-repeat center 25%/cover;
+            background: linear-gradient(rgba(11, 17, 32, 0.65), rgba(11, 17, 32, 0.65)), url('assets/contact_visual.webp') no-repeat center 25%/cover;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -225,7 +228,7 @@
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <img src="assets/logo_rb.png" alt="Bila Procurement Logo" class="brand-logo">
+                <img src="assets/logo_rb.webp" alt="Bila Procurement Logo" class="brand-logo" width="45" height="36" decoding="async">
                 <span class="brand-name">Bila Procurement</span>
             </a>
             <ul class="nav-links">
@@ -258,7 +261,7 @@
                     <p class="mt-4">Our presence in Mogadishu isn’t just about office space; it’s about deep-seated community ties and an intricate understanding of the local logistical challenges. We combine international best practices with on-the-ground agility to ensure every contract is executed with surgical precision.</p>
                 </div>
                 <div class="heritage-images">
-                    <img src="assets/heritage_office.jpeg" alt="Strategic Operations Office">
+                    <img src="assets/heritage_office.webp" alt="Strategic Operations Office" loading="lazy" decoding="async" width="600" height="480">
                 </div>
             </div>
         </div>
@@ -270,7 +273,7 @@
             <span class="section-subtitle text-center">LEADERSHIP</span>
             <div class="leader-card">
                 <div class="leader-image">
-                    <img src="assets/owner_profile.png" alt="Qamar Sh. Osman - Founder & CEO">
+                    <img src="assets/owner_profile.webp" alt="Qamar Sh. Osman - Founder & CEO" loading="lazy" decoding="async" width="400" height="500">
                 </div>
                 <div class="leader-info">
                     <h2>Qamar Sh. Osman</h2>
@@ -330,7 +333,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col brand-col">
-                    <img src="assets/logo_rb.png" alt="Bila Procurement Logo" class="brand-logo footer-img-logo">
+                    <img src="assets/logo_rb.webp" alt="Bila Procurement Logo" class="brand-logo footer-img-logo" width="60" height="48" loading="lazy" decoding="async">
                     <p>Excellence in logistics and government services within the Somali business landscape.</p>
                     <div class="social-links">
                         <a href="mailto:qamarprocurement@gmail.com"><i class="fa-solid fa-envelope"></i></a>

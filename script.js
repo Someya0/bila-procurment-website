@@ -46,7 +46,7 @@ function setupMobileDrawer() {
         drawer.innerHTML = `
             <div class="mobile-drawer-header">
                 <a href="index.html" class="mobile-drawer-logo">
-                    <img src="assets/logo_rb.png" alt="Bila Procurement Logo">
+                    <img src="assets/logo_rb.webp" alt="Bila Procurement Logo" width="36" height="29" decoding="async">
                     <span>Bila Procurement</span>
                 </a>
                 <button class="mobile-drawer-close" aria-label="Close menu">

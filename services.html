@@ -14,12 +14,15 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Performance Preload -->
+    <link rel="preload" as="image" href="assets/services_hero.webp" type="image/webp">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
     <style>
         .services-hero {
             min-height: 55vh;
-            background: linear-gradient(rgba(11, 17, 32, 0.65), rgba(11, 17, 32, 0.65)), url('assets/services_hero.png') no-repeat center 25%/cover;
+            background: linear-gradient(rgba(11, 17, 32, 0.65), rgba(11, 17, 32, 0.65)), url('assets/services_hero.webp') no-repeat center 25%/cover;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -235,7 +238,7 @@
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <img src="assets/logo_rb.png" alt="Bila Procurement Logo" class="brand-logo">
+                <img src="assets/logo_rb.webp" alt="Bila Procurement Logo" class="brand-logo" width="45" height="36" decoding="async">
                 <span class="brand-name">Bila Procurement</span>
             </a>
             <ul class="nav-links">
@@ -307,7 +310,7 @@
                 </div>
             </div>
             <div class="event-image">
-                <img src="assets/owner_situation.jpeg" alt="Bila Event Operations">
+                <img src="assets/owner_situation.webp" alt="Bila Event Operations" loading="lazy" decoding="async" width="600" height="450">
             </div>
         </section>
 
@@ -359,7 +362,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col brand-col">
-                    <img src="assets/logo_rb.png" alt="Bila Procurement Logo" class="brand-logo footer-img-logo">
+                    <img src="assets/logo_rb.webp" alt="Bila Procurement Logo" class="brand-logo footer-img-logo" width="60" height="48" loading="lazy" decoding="async">
                     <p>Reliable logistics and strategic procurement solutions for the Horn of Africa.</p>
                     <div class="social-links">
                         <a href="mailto:qamarprocurement@gmail.com"><i class="fa-solid fa-envelope"></i></a>

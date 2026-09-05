@@ -205,7 +205,7 @@ h1, h2, h3, .logo {
 .hero {
     min-height: 100vh;
     background: linear-gradient(rgba(11, 17, 32, 0.45), rgba(11, 17, 32, 0.45)), 
-                url('assets/presentation_team.png') no-repeat center 20%/cover;
+                url('assets/presentation_team.webp') no-repeat center 20%/cover;
     display: flex;
     align-items: center;
     position: relative;

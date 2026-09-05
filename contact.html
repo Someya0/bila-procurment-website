@@ -18,6 +18,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Performance Preload -->
+    <link rel="preload" as="image" href="assets/contact_visual.webp" type="image/webp">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -191,7 +194,7 @@
         .map-container {
             position: relative;
             height: 450px;
-            background: linear-gradient(rgba(11, 17, 32, 0.5), rgba(11, 17, 32, 0.5)), url('assets/office_contact.jpeg') no-repeat center center/cover;
+            background: linear-gradient(rgba(11, 17, 32, 0.5), rgba(11, 17, 32, 0.5)), url('assets/office_contact.webp') no-repeat center center/cover;
             border-radius: 8px;
             overflow: hidden;
         }
@@ -245,7 +248,7 @@
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <img src="assets/logo_rb.png" alt="Bila Procurement Logo" class="brand-logo">
+                <img src="assets/logo_rb.webp" alt="Bila Procurement Logo" class="brand-logo" width="45" height="36" decoding="async">
                 <span class="brand-name">Bila Procurement</span>
             </a>
             <ul class="nav-links">
@@ -272,7 +275,7 @@
                     <p style="font-size: 0.9rem; color: var(--text-light);">Efficient Service and Full Confidence</p>
                 </div>
                 <div class="contact-visual">
-                    <img src="assets/contact_visual.png" alt="Bila Logistics View">
+                    <img src="assets/contact_visual.webp" alt="Bila Logistics View" loading="lazy" decoding="async" width="600" height="380">
                 </div>
             </div>
         </div>
@@ -383,7 +386,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col brand-col">
-                    <img src="assets/logo_rb.png" alt="Bila Procurement Logo" class="brand-logo footer-img-logo">
+                    <img src="assets/logo_rb.webp" alt="Bila Procurement Logo" class="brand-logo footer-img-logo" width="60" height="48" loading="lazy" decoding="async">
                     <p>Your premier partner for seamless procurement and logistics in East Africa. Reliability followed.
                     </p>
                     <div class="social-links">
