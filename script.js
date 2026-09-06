@@ -46,8 +46,8 @@ function setupMobileDrawer() {
         drawer.innerHTML = `
             <div class="mobile-drawer-header">
                 <a href="index.html" class="mobile-drawer-logo">
-                    <img src="assets/logo_rb.webp" alt="Bila Procurement Logo" width="36" height="29" decoding="async">
-                    <span>Bila Procurement</span>
+                    <img src="assets/logo_rb.webp" alt="Bila Procurement and Logistics Logo" width="36" height="29" decoding="async">
+                    <span>Bila Procurement and Logistics</span>
                 </a>
                 <button class="mobile-drawer-close" aria-label="Close menu">
                     <i class="fa-solid fa-xmark"></i>
@@ -83,8 +83,8 @@ function setupMobileDrawer() {
                     <a href="tel:+252612448933" class="mobile-contact-item">
                         <i class="fa-solid fa-phone"></i> +252 61 244 8933
                     </a>
-                    <a href="mailto:qamarprocurement@gmail.com" class="mobile-contact-item">
-                        <i class="fa-solid fa-envelope"></i> qamarprocurement@gmail.com
+                    <a href="mailto:info@bila.company" class="mobile-contact-item">
+                        <i class="fa-solid fa-envelope"></i> info@bila.company
                     </a>
                     <div class="mobile-contact-item">
                         <i class="fa-solid fa-location-dot"></i> Mogadishu, Somalia
