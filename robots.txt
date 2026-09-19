@@ -1,4 +1,4 @@
-# Robots.txt for Bila Procurement and Logistics
+﻿# Robots.txt for Bila Procurement and Logistics
 # Allow all search engines and web crawlers to index all public content
 
 User-agent: *
@@ -8,5 +8,5 @@ Allow: /
 Disallow:
 
 # XML Sitemaps
-Sitemap: https://statuesque-fenglisu-910330.netlify.app/sitemap.xml
+Sitemap: https://bilaprocurement.netlify.app/sitemap.xml
 Sitemap: https://someya0.github.io/bila-procurment-website/sitemap.xml

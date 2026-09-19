@@ -5,29 +5,29 @@
                             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <!-- Homepage -->
     <url>
-        <loc>https://statuesque-fenglisu-910330.netlify.app/</loc>
-        <lastmod>2026-02-20</lastmod>
+        <loc>https://bilaprocurement.netlify.app/</loc>
+        <lastmod>2026-09-19</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <!-- About Us Page -->
     <url>
-        <loc>https://statuesque-fenglisu-910330.netlify.app/about.html</loc>
-        <lastmod>2026-02-20</lastmod>
+        <loc>https://bilaprocurement.netlify.app/about.html</loc>
+        <lastmod>2026-09-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
     </url>
     <!-- Services Page -->
     <url>
-        <loc>https://statuesque-fenglisu-910330.netlify.app/services.html</loc>
-        <lastmod>2026-02-20</lastmod>
+        <loc>https://bilaprocurement.netlify.app/services.html</loc>
+        <lastmod>2026-09-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.90</priority>
     </url>
     <!-- Contact Page -->
     <url>
-        <loc>https://statuesque-fenglisu-910330.netlify.app/contact.html</loc>
-        <lastmod>2026-02-20</lastmod>
+        <loc>https://bilaprocurement.netlify.app/contact.html</loc>
+        <lastmod>2026-09-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
